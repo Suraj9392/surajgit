@@ -1,0 +1,5 @@
+first name:
+IF(INSTR(Full_Name,' ') > 0,substr(Full_Name,INSTR(Full_Name,' ')+1),'')
+
+last name:
+IIF(INSTR(Full_Name,' ') > 0, SUBSTR(Full_Name,0,INSTR(Full_Name,' ')),Full_Name)
